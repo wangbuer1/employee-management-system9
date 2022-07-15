@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>	
+<!-- 这是默认配置信息 -->	
+	<default-config>		
+		<!-- 连接四大参数配置 -->		
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/ks?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC&amp;rewriteBatchedStatements=true</property>
+		<property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+		<property name="user">root</property>		
+		<property name="password">root</property>		
+		<!-- 池参数配置 -->		
+		<!--初始化的池大小 --> 
+        <property name="initialPoolSize">5</property>
+        <!-- 最多的一个connection空闲时间 单位是秒 -->  
+        <property name="maxIdleTime">30</property>
+        <!-- 最大可以有多少个连接connection -->
+        <property name="maxPoolSize">10</property>
+        <!-- 最少的池中有几个连接 -->
+        <property name="minPoolSize">2</property>
+	</default-config>
+</c3p0-config>
